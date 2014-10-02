@@ -1,0 +1,42 @@
+@import 'parametros.scss';
+@import 'mixins.scss';
+
+.nav-tabs{
+  >li{
+    >a{
+      padding: 7px 14px;
+      font-size: 13px;
+      @include border-radius(4px, 4px, 0px, 0px);
+    }
+  }
+  >li.active{
+    >a, a:hover{
+      // background-color: $color-2;
+      // border-color: transparent;
+      // color: #FFF;
+    }
+  }
+  >li:not(.active){
+    >a{
+      color: $font-color-1;
+    }
+    >a:hover{
+      color: $color-2;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}
+.tab-content{
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+.nav-pills{
+  >li.active{
+    >a{
+      background-color: transparent;
+      color: $color-2;
+    }
+  }
+}

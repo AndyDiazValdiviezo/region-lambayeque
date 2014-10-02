@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>.:: Administrador de contenidos ::.</title>
+
+  <!-- Bootstrap -->
+  <link href="public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google web fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Gudea:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="public/css/index.css">
+  <link rel="stylesheet" href="public/css/my-bootstrap.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row cabecera">
+      <div class="col-lg-7">
+        <div class="logo">
+          <img src="public/img/logo2.png" alt="">
+          <div class="titulo">
+            <h1>Ordenamiento Territorial para el DS</h1>
+            <h3>GOBIERNO REGIONAL DE LAMBAYEQUE</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="opciones">
+          <ul class="botones">
+            <li>
+              <span class="glyphicon glyphicon-user"></span><a href="">Usuario</a>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-log-out"></span><a href="">Cerrar sesión</a>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-question-sign"></span><a href="">Ayuda</a>
+            </li>
+          </ul>
+          <div class="fecha">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <div class="texto">Lunes 08 de Setiembre del 2014</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row cuerpo">
+      <div class="col-lg-12">
+        <!-- Pestañas -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+          <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+          <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+          <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+        <!-- Contenidos -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-10">
+                <div class="row navegador">
+                  <div class="col-lg-12">
+                    <ul>
+                      <li><a href="">Inicio</a></li>
+                      <li><a href="">Roles</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row botonera">
+                  <div class="col-lg-12">
+                    <button class="btn btn-default">
+                      <span class="icono"></span>
+                      <span class="texto">Nuevo</span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="icono"></span>
+                      <span class="texto">Listar</span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="icono"></span>
+                      <span class="texto">Editar</span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="icono"></span>
+                      <span class="texto">Eliminar</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="row data">
+                  <div class="col-lg-12">
+                    <div class="row buscador">
+                      <div class="col-lg 12">
+                        <form role="form" class="form-inline">
+                          <input class="form-control" type="text" name="" id="" placeholder="Buscar Rol">
+                          <select class="form-control pull-right" name="" id=""></select>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row tabla">
+                      <div class="col-lg-12">
+                        <table class="table">
+                          <tr>
+                            <th></th>
+                            <th>Código</th>
+                            <th>Rol</th>
+                            <th>Descripción</th>
+                            <th>Estado</th>
+                          </tr>
+                          <tr>
+                            <td><input type="radio" name="" id=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><input type="radio" name="" id=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><input type="radio" name="" id=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="row paginador">
+                      <div class="col-lg-12 text-center">
+                        <ul class="pagination">
+                          <li><a href="#">&laquo;</a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">&raquo;</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="profile">profile</div>
+          <div class="tab-pane" id="messages">messages</div>
+          <div class="tab-pane" id="settings">settings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="public/lib/jquery/jquery-2.1.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="public/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+html body .cabecera .logo {
+  padding: 10px 0px; }
+  html body .cabecera .logo img {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    width: 60px; }
+  html body .cabecera .logo .titulo {
+    float: left;
+    font-family: "Gudea", sans-serif;
+    color: #259fa6; }
+    html body .cabecera .logo .titulo h1 {
+      margin: 10px 0px 4px 0px;
+      font-size: 22px; }
+    html body .cabecera .logo .titulo h3 {
+      font-size: 14px;
+      margin: 0px 0px 8px 0px; }
+html body .cabecera .opciones {
+  padding: 10px 0px; }
+  html body .cabecera .opciones .botones {
+    float: right;
+    list-style: none; }
+    html body .cabecera .opciones .botones li {
+      float: left;
+      margin: 0px 0px 0px 10px; }
+  html body .cabecera .opciones .fecha {
+    float: right;
+    clear: right; }
+    html body .cabecera .opciones .fecha .glyphicon {
+      float: left;
+      margin: 0px 6px 0px 0px; }
+    html body .cabecera .opciones .fecha .texto {
+      float: left; }
+
+/*# sourceMappingURL=index.css.map */
