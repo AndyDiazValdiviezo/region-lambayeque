@@ -7,7 +7,7 @@ html body .cabecera .logo {
   html body .cabecera .logo .titulo {
     float: left;
     font-family: "Gudea", sans-serif;
-    color: #259fa6; }
+    color: #555; }
     html body .cabecera .logo .titulo h1 {
       margin: 10px 0px 4px 0px;
       font-size: 22px; }
@@ -15,20 +15,108 @@ html body .cabecera .logo {
       font-size: 14px;
       margin: 0px 0px 8px 0px; }
 html body .cabecera .opciones {
-  padding: 10px 0px; }
+  overflow: hidden;
+  padding: 14px 0px; }
   html body .cabecera .opciones .botones {
     float: right;
     list-style: none; }
     html body .cabecera .opciones .botones li {
       float: left;
-      margin: 0px 0px 0px 10px; }
+      margin: 0px 0px 0px 18px;
+      font-size: 14px; }
+      html body .cabecera .opciones .botones li .glyphicon {
+        margin: 0px 4px 0px 0px; }
+      html body .cabecera .opciones .botones li a {
+        color: #555;
+        font-family: "Gudea", sans-serif; }
+      html body .cabecera .opciones .botones li a:hover {
+        text-decoration: none; }
+    html body .cabecera .opciones .botones li:hover {
+      color: #259FA6; }
+      html body .cabecera .opciones .botones li:hover a {
+        color: #259FA6; }
   html body .cabecera .opciones .fecha {
     float: right;
-    clear: right; }
+    clear: right;
+    margin: 6px 0px 0px 0px;
+    color: #777;
+    font-size: 12px; }
     html body .cabecera .opciones .fecha .glyphicon {
       float: left;
       margin: 0px 6px 0px 0px; }
     html body .cabecera .opciones .fecha .texto {
-      float: left; }
+      float: left;
+      font-family: "Open Sans", sans-serif; }
+html body .cuerpo .menu-principal {
+  position: relative;
+  z-index: 1; }
+html body .cuerpo .menu-principal + .tab-content {
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD; }
+html body .cuerpo .menu-interno {
+  padding-right: 0;
+  min-height: 500px;
+  border-right: 1px solid #DDD; }
+  html body .cuerpo .menu-interno .nav {
+    background-color: #FFF;
+    border: none; }
+    html body .cuerpo .menu-interno .nav > li > a {
+      padding: 12px 8px; }
+      html body .cuerpo .menu-interno .nav > li > a > .glyphicon {
+        margin: 0px 2px 0px 0px;
+        opacity: 0; }
+    html body .cuerpo .menu-interno .nav > li.active > a > .glyphicon {
+      opacity: 1; }
+html body .cuerpo .contenido {
+  padding-left: 0; }
+  html body .cuerpo .contenido .tab-pane {
+    padding: 10px 15px; }
+  html body .cuerpo .contenido .navegador ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    html body .cuerpo .contenido .navegador ul li {
+      float: left;
+      margin: 0px 10px 0px 0px;
+      font-family: "Gudea", sans-serif;
+      color: #7b7d82; }
+      html body .cuerpo .contenido .navegador ul li a {
+        color: #7b7d82; }
+      html body .cuerpo .contenido .navegador ul li a:hover {
+        text-decoration: none; }
+      html body .cuerpo .contenido .navegador ul li a.resaltado {
+        color: #515050;
+        font-weight: bold; }
+  html body .cuerpo .contenido .botonera {
+    padding: 10px 0px; }
+    html body .cuerpo .contenido .botonera .btn {
+      margin: 0px 2px 0px 0px;
+      padding: 0px 10px 0px 0px; }
+      html body .cuerpo .contenido .botonera .btn .fa {
+        padding: 8px 10px; }
+      html body .cuerpo .contenido .botonera .btn .texto {
+        padding: 0px 0px 0px 6px; }
+  html body .cuerpo .contenido .tabla .cnt-tabla {
+    padding: 10px;
+    border: 1px solid #DDD; }
+    html body .cuerpo .contenido .tabla .cnt-tabla h1 {
+      margin: 0px 0px 8px 0px;
+      font-family: "Gudea", sans-serif;
+      font-size: 14px;
+      color: #555; }
+    html body .cuerpo .contenido .tabla .cnt-tabla table input[type="text"] {
+      font-size: 12px;
+      height: 28px;
+      max-width: 150px; }
+    html body .cuerpo .contenido .tabla .cnt-tabla table tr th {
+      font-family: "Gudea", sans-serif;
+      font-size: 14px;
+      color: #777; }
+    html body .cuerpo .contenido .tabla .cnt-tabla table tr td {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      color: #777; }
 
 /*# sourceMappingURL=index.css.map */

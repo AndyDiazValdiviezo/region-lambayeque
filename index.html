@@ -9,8 +9,12 @@
   <!-- Bootstrap -->
   <link href="public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Font aewsome -->
+  <link href="public/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
   <!-- Google web fonts -->
   <link href='http://fonts.googleapis.com/css?family=Gudea:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600' rel='stylesheet' type='text/css'>
 
   <!-- Estilos -->
   <link rel="stylesheet" href="public/css/index.css">
@@ -50,118 +54,197 @@
     </div>
     <div class="row cuerpo">
       <div class="col-lg-12">
-        <!-- Pestañas -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-          <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
-          <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-          <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-        </ul>
+        <div class="menu-principal">
+          <!-- Pestañas -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li>
+              <a href="#informacion" role="tab" data-toggle="tab">Administración de Información</a>
+            </li>
+            <li>
+              <a href="#contenidos" role="tab" data-toggle="tab">Gestor de Contenidos</a>
+            </li>
+            <li class="active">
+              <a href="#usuarios" role="tab" data-toggle="tab">Gestión de Usuarios</a>
+            </li>
+          </ul>
+        </div>
         <!-- Contenidos -->
         <div class="tab-content">
-          <div class="tab-pane active" id="home">
+          <div class="tab-pane" id="informacion">informacion</div>
+          <div class="tab-pane" id="contenidos">contenidos</div>
+          <div class="tab-pane active" id="usuarios">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 menu-interno">
+                <!-- Pestañas -->
                 <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#">Messages</a></li>
+                  <li class="active">
+                    <a href="#uno" role="tab" data-toggle="tab">
+                      <span class="glyphicon glyphicon-wrench"></span>
+                      <span class="texto">Roles</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#dos" role="tab" data-toggle="tab">
+                      <span class="glyphicon glyphicon-wrench"></span>
+                      <span class="texto">Asignar permisos a rol</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tres" role="tab" data-toggle="tab">
+                      <span class="glyphicon glyphicon-wrench"></span>
+                      <span class="texto">Usuarios</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tres" role="tab" data-toggle="tab">
+                      <span class="glyphicon glyphicon-wrench"></span>
+                      <span class="texto">Asignar rol a usuario</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tres" role="tab" data-toggle="tab">
+                      <span class="glyphicon glyphicon-wrench"></span>
+                      <span class="texto">Asignar permisos a usuario</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tres" role="tab" data-toggle="tab">
+                      <span class="glyphicon glyphicon-wrench"></span>
+                      <span class="texto">Personas</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
-              <div class="col-lg-10">
-                <div class="row navegador">
-                  <div class="col-lg-12">
-                    <ul>
-                      <li><a href="">Inicio</a></li>
-                      <li><a href="">Roles</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row botonera">
-                  <div class="col-lg-12">
-                    <button class="btn btn-default">
-                      <span class="icono"></span>
-                      <span class="texto">Nuevo</span>
-                    </button>
-                    <button class="btn btn-default">
-                      <span class="icono"></span>
-                      <span class="texto">Listar</span>
-                    </button>
-                    <button class="btn btn-default">
-                      <span class="icono"></span>
-                      <span class="texto">Editar</span>
-                    </button>
-                    <button class="btn btn-default">
-                      <span class="icono"></span>
-                      <span class="texto">Eliminar</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="row data">
-                  <div class="col-lg-12">
-                    <div class="row buscador">
-                      <div class="col-lg 12">
-                        <form role="form" class="form-inline">
-                          <input class="form-control" type="text" name="" id="" placeholder="Buscar Rol">
-                          <select class="form-control pull-right" name="" id=""></select>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="row tabla">
+              <!-- Contenidos -->
+              <div class="col-lg-10 col-md-10 col-sm-10 contenido">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="uno">
+                    <div class="row navegador">
                       <div class="col-lg-12">
-                        <table class="table">
-                          <tr>
-                            <th></th>
-                            <th>Código</th>
-                            <th>Rol</th>
-                            <th>Descripción</th>
-                            <th>Estado</th>
-                          </tr>
-                          <tr>
-                            <td><input type="radio" name="" id=""></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td><input type="radio" name="" id=""></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td><input type="radio" name="" id=""></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="row paginador">
-                      <div class="col-lg-12 text-center">
-                        <ul class="pagination">
-                          <li><a href="#">&laquo;</a></li>
-                          <li><a href="#">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#">&raquo;</a></li>
+                        <ul>
+                          <li><a href="" class="resaltado">Inicio</a></li>
+                          <li class="separador">></li>
+                          <li><a href="">Roles</a></li>
                         </ul>
                       </div>
                     </div>
+                    <div class="row botonera">
+                      <div class="col-lg-12">
+                        <button class="btn btn-default nuevo">
+                          <i class="fa fa-file-text-o"></i>
+                          <span class="texto">Nuevo</span>
+                        </button>
+                        <button class="btn btn-default listar">
+                          <i class="fa fa-list-ul"></i>
+                          <span class="texto">Listar</span>
+                        </button>
+                        <button class="btn btn-default editar">
+                          <i class="fa fa-pencil-square-o"></i>
+                          <span class="texto">Editar</span>
+                        </button>
+                        <button class="btn btn-default eliminar">
+                          <i class="fa fa-trash-o"></i>
+                          <span class="texto">Eliminar</span>
+                        </button>
+                        <!-- Selector -->
+                        <form class="form-inline pull-right" role="form">
+                          <select class="form-control" name="" id="">
+                            <option value="1">Elemento 1</option>
+                            <option value="2">Elemento 2</option>
+                            <option value="3">Elemento 3</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row data">
+                      <div class="col-lg-12">
+                        <div class="row tabla">
+                          <div class="col-lg-12">
+                            <div class="cnt-tabla">
+                              <h1>Título de la tabla</h1>
+                              <table class="table">
+                                <tr>
+                                  <td></td>
+                                  <td><input class="form-control" type="text" name="" id="" placeholder="Código"></td>
+                                  <td><input class="form-control" type="text" name="" id="" placeholder="Rol"></td>
+                                  <td><input class="form-control" type="text" name="" id="" placeholder="Descripción"></td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <th></th>
+                                  <th>Código</th>
+                                  <th>Rol</th>
+                                  <th>Descripción</th>
+                                  <th>Estado</th>
+                                </tr>
+                                <tr>
+                                  <td><input type="radio" name="" id=""></td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="radio" name="" id=""></td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="radio" name="" id=""></td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="radio" name="" id=""></td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="radio" name="" id=""></td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="radio" name="" id=""></td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                  <td>Texto</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row paginador">
+                          <div class="col-lg-12 text-center">
+                            <ul class="pagination">
+                              <li><a href="#">&laquo;</a></li>
+                              <li class="active"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#">&raquo;</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <div class="tab-pane" id="dos">...</div>
+                  <div class="tab-pane" id="tres">...</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane" id="profile">profile</div>
-          <div class="tab-pane" id="messages">messages</div>
-          <div class="tab-pane" id="settings">settings</div>
         </div>
       </div>
     </div>

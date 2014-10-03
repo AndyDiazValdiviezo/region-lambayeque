@@ -1,42 +1,183 @@
 @import 'parametros.scss';
 @import 'mixins.scss';
 
+// Pestañas horizontales
 .nav-tabs{
+  background-color: #FFF;
+  border-left: 1px solid $bd-color-1;
+  border-top: none;
+  border-right: none;
   >li{
+    margin-bottom: -2px;
     >a{
-      padding: 7px 14px;
+      margin: 0;
+      padding: 7px 18px;
       font-size: 13px;
-      @include border-radius(4px, 4px, 0px, 0px);
+      font-family: $font-1;
+      color: $color-2;
+      border-left: none;
+      border-right: 1px solid $bd-color-1;
+      border-top: 1px solid $bd-color-1;
+      @include border-radius(0px, 0px, 0px, 0px);
+    }
+    >a:hover{
+      color: $bk-color-1;
+      border-color: $bd-color-1;
+      border-left: none;
+      border-right: 1px solid $bd-color-1;
+      border-top: 1px solid $bd-color-1;
+      border-bottom: 1px solid transparent;
+      background-color: transparent;
     }
   }
   >li.active{
     >a, a:hover{
-      // background-color: $color-2;
-      // border-color: transparent;
-      // color: #FFF;
+      border-left: 0px solid transparent;
+      border-top: 2px solid $bk-color-1;
+      color: $color-1;
+      font-weight: bold;
     }
   }
-  >li:not(.active){
+}
+
+// Pestañas verticales
+.nav-pills{
+  border: 1px solid $bd-color-1;
+  >li{
     >a{
-      color: $font-color-1;
+      font-family: $font-1;
+      color: $color-2;
+      font-size: 12.5px;
+      margin-right: -1px;
+      margin-top: -2px;
+      border-bottom: 1px solid $bd-color-1;
+      @include border-radius(0px, 0px, 0px, 0px);
     }
     >a:hover{
-      color: $color-2;
       background-color: transparent;
-      border-color: transparent;
+      color: $bk-color-1;
+    }
+  }
+  >li.active{
+    >a{
+      color: $color-1;
+      font-weight: bold;
+      background-color: #FFF;
+    }
+    >a:hover{
+      cursor: default;
+      color: $color-1;
+      background-color: #FFF;
     }
   }
 }
-.tab-content{
-  border-left: 1px solid #DDD;
-  border-right: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
+
+// Botones
+.btn{
+  font-family: $font-1;
+  font-size: 13px;
+  border-color: $bd-color-1;
+  color: $color-2;
+  @include border-radius(0px, 0px, 0px, 0px);
+  .fa{
+    border-right: 1px solid $bd-color-1;
+  }
 }
-.nav-pills{
+.btn:hover{
+  border-color: $bd-color-1;
+}
+.btn-default:hover{
+  background-color: #FFF * 0.99;
+}
+.btn-default:hover{
+  border-color: transparent;
+  color: #FFF;
+  outline: none;
+  outline-offset: 0px;
+  box-shadow: none;
+  .fa{
+    border-right: 1px solid transparent;
+  }
+}
+.btn-default.nuevo:hover{
+  background-color: $ind-color-1;
+  .fa{
+    background-color: $ind-color-1 * 0.9;
+  }
+}
+.btn-default.listar:hover{
+  background-color: $ind-color-2;
+  .fa{
+    background-color: $ind-color-2 * 0.9;
+  }
+}
+.btn-default.editar:hover{
+  background-color: $ind-color-3;
+  .fa{
+    background-color: $ind-color-3 * 0.9;
+  }
+}
+.btn-default.eliminar:hover{
+  background-color: $ind-color-4;
+  .fa{
+    background-color: $ind-color-4 * 0.9;
+  }
+}
+.btn-default.nuevo:focus{
+  @extend .btn-default:hover, .btn-default.nuevo:hover;
+}
+.btn-default.listar:focus{
+  @extend .btn-default:hover, .btn-default.listar:hover;
+}
+.btn-default.editar:focus{
+  @extend .btn-default:hover, .btn-default.editar:hover;
+}
+.btn-default.eliminar:focus{
+  @extend .btn-default:hover, .btn-default.eliminar:hover;
+}
+
+// Elementos de formulario
+.form-control{
+  height: 32px;
+  padding: 5px 10px;
+  font-family: $font-1;
+  border-color: $bd-color-1;
+  box-shadow: none;
+  @include border-radius(0px, 0px, 0px, 0px);
+}
+.form-control:focus{
+  border-color: $ind-color-1;
+  box-shadow: none;
+}
+
+// Paginador
+.pagination{
+  >li{
+    >a{
+      font-family: $font-1;
+      font-size: 12px;
+      color: $color-1;
+    }
+    >a:hover{
+      background-color: #FFF;
+      color: $bk-color-1;
+    }
+    >a:first-child{
+      @include border-radius(0px, 0px, 0px, 0px);
+    }
+    >a:last-child{
+      @include border-radius(0px, 0px, 0px, 0px);
+    }
+  }
   >li.active{
     >a{
-      background-color: transparent;
-      color: $color-2;
+      color: #FFF;
+      border: 1px solid transparent;
+      background-color: $bk-color-1;
+      font-weight: bold;
+    }
+    >a:hover{
+      @extend a;
     }
   }
 }

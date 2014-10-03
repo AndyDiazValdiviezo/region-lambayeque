@@ -25,25 +25,160 @@ html{
         }
       }
       .opciones{
-        padding: 10px 0px;
+        overflow: hidden;
+        padding: 14px 0px;
         .botones{
           float: right;
           list-style: none;
           li{
             float: left;
-            margin: 0px 0px 0px 10px;
+            margin: 0px 0px 0px 18px;
+            font-size: 14px;
+            .glyphicon{
+              margin: 0px 4px 0px 0px;
+            }
+            a{
+              color: $color-1;
+              font-family: $font-1;
+            }
+            a:hover{
+              text-decoration: none;
+            }
+          }
+          li:hover{
+            color: $bk-color-1;
+            a{
+              color: $bk-color-1;
+            }
           }
         }
         .fecha{
           float: right;
           clear: right;
+          margin: 6px 0px 0px 0px;
+          color: $color-2;
+          font-size: 12px;
           .glyphicon{
             float: left;
             margin: 0px 6px 0px 0px;
           }
           .texto{
             float: left;
+            font-family: $font-2;
           }
+        }
+      }
+    }
+    .cuerpo{
+      .menu-principal{
+        position: relative;
+        z-index: 1;
+      }
+      .menu-principal + .tab-content{
+        border-left: 1px solid $bd-color-1;
+        border-right: 1px solid $bd-color-1;
+        border-bottom: 1px solid $bd-color-1;
+      }
+      .menu-interno{
+        padding-right: 0;
+        min-height: 500px;
+        border-right: 1px solid $bd-color-1;
+        .nav{
+          background-color: #FFF;
+          border: none;
+          >li{
+            >a{
+              padding: 12px 8px;
+              >.glyphicon{
+                margin: 0px 2px 0px 0px;
+                opacity: 0;
+              }
+            }
+          }
+          >li.active{
+            >a{
+              >.glyphicon{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .contenido{
+        padding-left: 0;
+        .tab-pane{
+          padding: 10px 15px;
+        }
+        .navegador{
+          ul{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+              float: left;
+              margin: 0px 10px 0px 0px;
+              font-family: $font-1;
+              color: #7b7d82;
+              a{
+                color: #7b7d82;
+              }
+              a:hover{
+                text-decoration: none;
+              }
+              a.resaltado{
+                color: #515050;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .botonera{
+          padding: 10px 0px;
+          .btn{
+            margin: 0px 2px 0px 0px;
+            padding: 0px 10px 0px 0px;
+            .fa{
+              padding: 8px 10px;
+            }
+            .texto{
+              padding: 0px 0px 0px 6px;
+            }
+          }
+        }
+        .tabla{
+          .cnt-tabla{
+            padding: 10px;
+            border: 1px solid $bd-color-1;
+            h1{
+              margin: 0px 0px 8px 0px;
+              font-family: $font-1;
+              font-size: 14px;
+              color: $color-1;
+            }
+            table{
+              input[type="text"]{
+                font-size: 12px;
+                height: 28px;
+                max-width: 150px;
+              }
+              tr{
+                th{
+                  font-family: $font-1;
+                  font-size: 14px;
+                  color: $color-2;
+                }
+                td{
+                  font-family: $font-2;
+                  font-size: 12px;
+                  color: $color-2;
+                }
+              }
+            }
+          }
+        }
+        .paginador{
+
         }
       }
     }
