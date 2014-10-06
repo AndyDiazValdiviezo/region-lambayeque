@@ -1,0 +1,30 @@
+@import 'parametros.scss';
+
+.my-radio{
+  position: relative;
+  display: block;
+  margin: 0;
+  .fa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $bk-color-1;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  input[type="radio"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  input[type="radio"] + .fa-circle-thin +.fa-check-circle{
+    visibility: hidden;
+  }
+  input[type="radio"]:checked + .fa-circle-thin{
+    visibility: hidden;
+  }
+  input[type="radio"]:checked + .fa-circle-thin +.fa-check-circle{
+    visibility: visible;
+  }
+}

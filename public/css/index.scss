@@ -73,51 +73,43 @@ html{
       .menu-principal{
         position: relative;
         z-index: 1;
+        .nav{
+          background-color: $bk-color-6;
+        }
       }
       .menu-principal + .tab-content{
+        padding-top: 10px;
         border-left: 1px solid $bd-color-1;
         border-right: 1px solid $bd-color-1;
         border-bottom: 1px solid $bd-color-1;
+        >.tab-pane{
+          border-top: 1px solid $bd-color-1;
+        }
       }
       .menu-interno{
         padding-right: 0;
-        min-height: 500px;
-        border-right: 1px solid $bd-color-1;
+        height: 550px;
         .nav{
-          background-color: #FFF;
+          height: 100%;
+          background-color: $bk-color-5;
           border: none;
-          >li{
-            >a{
-              padding: 12px 8px;
-              >.glyphicon{
-                margin: 0px 2px 0px 0px;
-                opacity: 0;
-              }
-            }
-          }
-          >li.active{
-            >a{
-              >.glyphicon{
-                opacity: 1;
-              }
-            }
-          }
         }
       }
       .contenido{
         padding-left: 0;
         .tab-pane{
-          padding: 10px 15px;
+          padding: 15px 15px 15px 15px;
+          background-color: $bk-color-7;
         }
         .navegador{
           ul{
             display: inline-block;
-            margin: 0;
+            margin: 0px 0px 4px 0px;
             padding: 0;
             list-style: none;
             li{
               float: left;
-              margin: 0px 10px 0px 0px;
+              margin: 0px 10px 6px 10px;
               font-family: $font-1;
               color: #7b7d82;
               a{
@@ -133,8 +125,13 @@ html{
             }
           }
         }
+        .marco-data{
+          // border: 1px solid $bd-color-1;
+          padding: 10px;
+          background-color: #FFF;
+        }
         .botonera{
-          padding: 10px 0px;
+          padding: 0px 0px;
           .btn{
             margin: 0px 2px 0px 0px;
             padding: 0px 10px 0px 0px;
@@ -148,12 +145,13 @@ html{
         }
         .tabla{
           .cnt-tabla{
+            margin: 10px 0px 0px 0px;
             padding: 10px;
-            border: 1px solid $bd-color-1;
+            // border: 1px solid $bd-color-1;
             h1{
               margin: 0px 0px 8px 0px;
               font-family: $font-1;
-              font-size: 14px;
+              font-size: 18px;
               color: $color-1;
             }
             table{
@@ -172,13 +170,21 @@ html{
                   font-family: $font-2;
                   font-size: 12px;
                   color: $color-2;
+                  cursor: pointer;
                 }
+              }
+              tr.seleccionable{
+                cursor: pointer;
               }
             }
           }
         }
         .paginador{
-
+          margin: 10px 0px 0px 0px;
+          border-top: 1px solid $bd-color-1;
+          .pagination{
+            margin: 10px 0px 0px 0px;
+          }
         }
       }
     }

@@ -50,36 +50,35 @@ html body .cabecera .opciones {
 html body .cuerpo .menu-principal {
   position: relative;
   z-index: 1; }
+  html body .cuerpo .menu-principal .nav {
+    background-color: #2B3D51; }
 html body .cuerpo .menu-principal + .tab-content {
+  padding-top: 10px;
   border-left: 1px solid #DDD;
   border-right: 1px solid #DDD;
   border-bottom: 1px solid #DDD; }
+  html body .cuerpo .menu-principal + .tab-content > .tab-pane {
+    border-top: 1px solid #DDD; }
 html body .cuerpo .menu-interno {
   padding-right: 0;
-  min-height: 500px;
-  border-right: 1px solid #DDD; }
+  height: 550px; }
   html body .cuerpo .menu-interno .nav {
-    background-color: #FFF;
+    height: 100%;
+    background-color: #EAEAEA;
     border: none; }
-    html body .cuerpo .menu-interno .nav > li > a {
-      padding: 12px 8px; }
-      html body .cuerpo .menu-interno .nav > li > a > .glyphicon {
-        margin: 0px 2px 0px 0px;
-        opacity: 0; }
-    html body .cuerpo .menu-interno .nav > li.active > a > .glyphicon {
-      opacity: 1; }
 html body .cuerpo .contenido {
   padding-left: 0; }
   html body .cuerpo .contenido .tab-pane {
-    padding: 10px 15px; }
+    padding: 15px 15px 15px 15px;
+    background-color: #F9F9F9; }
   html body .cuerpo .contenido .navegador ul {
     display: inline-block;
-    margin: 0;
+    margin: 0px 0px 4px 0px;
     padding: 0;
     list-style: none; }
     html body .cuerpo .contenido .navegador ul li {
       float: left;
-      margin: 0px 10px 0px 0px;
+      margin: 0px 10px 6px 10px;
       font-family: "Gudea", sans-serif;
       color: #7b7d82; }
       html body .cuerpo .contenido .navegador ul li a {
@@ -89,8 +88,11 @@ html body .cuerpo .contenido {
       html body .cuerpo .contenido .navegador ul li a.resaltado {
         color: #515050;
         font-weight: bold; }
+  html body .cuerpo .contenido .marco-data {
+    padding: 10px;
+    background-color: #FFF; }
   html body .cuerpo .contenido .botonera {
-    padding: 10px 0px; }
+    padding: 0px 0px; }
     html body .cuerpo .contenido .botonera .btn {
       margin: 0px 2px 0px 0px;
       padding: 0px 10px 0px 0px; }
@@ -99,12 +101,12 @@ html body .cuerpo .contenido {
       html body .cuerpo .contenido .botonera .btn .texto {
         padding: 0px 0px 0px 6px; }
   html body .cuerpo .contenido .tabla .cnt-tabla {
-    padding: 10px;
-    border: 1px solid #DDD; }
+    margin: 10px 0px 0px 0px;
+    padding: 10px; }
     html body .cuerpo .contenido .tabla .cnt-tabla h1 {
       margin: 0px 0px 8px 0px;
       font-family: "Gudea", sans-serif;
-      font-size: 14px;
+      font-size: 18px;
       color: #555; }
     html body .cuerpo .contenido .tabla .cnt-tabla table input[type="text"] {
       font-size: 12px;
@@ -117,6 +119,14 @@ html body .cuerpo .contenido {
     html body .cuerpo .contenido .tabla .cnt-tabla table tr td {
       font-family: "Open Sans", sans-serif;
       font-size: 12px;
-      color: #777; }
+      color: #777;
+      cursor: pointer; }
+    html body .cuerpo .contenido .tabla .cnt-tabla table tr.seleccionable {
+      cursor: pointer; }
+  html body .cuerpo .contenido .paginador {
+    margin: 10px 0px 0px 0px;
+    border-top: 1px solid #DDD; }
+    html body .cuerpo .contenido .paginador .pagination {
+      margin: 10px 0px 0px 0px; }
 
 /*# sourceMappingURL=index.css.map */

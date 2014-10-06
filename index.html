@@ -18,6 +18,7 @@
 
   <!-- Estilos -->
   <link rel="stylesheet" href="public/css/index.css">
+  <link rel="stylesheet" href="public/css/my-elementos.css">
   <link rel="stylesheet" href="public/css/my-bootstrap.css">
 </head>
 <body>
@@ -77,39 +78,50 @@
               <div class="col-lg-2 col-md-2 col-sm-2 menu-interno">
                 <!-- Pestañas -->
                 <ul class="nav nav-pills nav-stacked">
-                  <li class="active">
-                    <a href="#uno" role="tab" data-toggle="tab">
-                      <span class="glyphicon glyphicon-wrench"></span>
-                      <span class="texto">Roles</span>
+                  <li class="active desplegable">
+                    <a href="#">
+                      <button type="button" class="btn button-item" data-toggle="collapse" data-target="#uno-accordion">
+                        <i class="fa fa-chevron-right"></i>
+                        <span class="texto">Roles</span>
+                      </button>
                     </a>
+                    <div id="uno-accordion" class="collapse in">
+                      <a href="#uno" class="subitem" role="tab" data-toggle="tab">Subitem 1</a>
+                      <a href="#cero" class="subitem" role="tab" data-toggle="tab">Subitem 2</a>
+                    </div>
+                  </li>
+                  <li class="desplegable">
+                    <a href="#">
+                      <button type="button" class="btn button-item collapsed" data-toggle="collapse" data-target="#dos-accordion">
+                        <i class="fa fa-chevron-right"></i>
+                        <span class="texto">Asignar permisos a rol</span>
+                      </button>
+                    </a>
+                    <div id="dos-accordion" class="collapse">
+                      <a href="#dos" class="subitem" role="tab" data-toggle="tab">Subitem</a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#dos" role="tab" data-toggle="tab">
-                      <span class="glyphicon glyphicon-wrench"></span>
-                      <span class="texto">Asignar permisos a rol</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#tres" role="tab" data-toggle="tab">
-                      <span class="glyphicon glyphicon-wrench"></span>
+                    <a href="#tres" class="link-item" role="tab" data-toggle="tab">
+                      <i class="fa fa-circle-o"></i>
                       <span class="texto">Usuarios</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#tres" role="tab" data-toggle="tab">
-                      <span class="glyphicon glyphicon-wrench"></span>
+                    <a href="#tres" class="link-item" role="tab" data-toggle="tab">
+                      <i class="fa fa-circle-o"></i>
                       <span class="texto">Asignar rol a usuario</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#tres" role="tab" data-toggle="tab">
-                      <span class="glyphicon glyphicon-wrench"></span>
+                    <a href="#tres" class="link-item" role="tab" data-toggle="tab">
+                      <i class="fa fa-circle-o"></i>
                       <span class="texto">Asignar permisos a usuario</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#tres" role="tab" data-toggle="tab">
-                      <span class="glyphicon glyphicon-wrench"></span>
+                    <a href="#tres" class="link-item" role="tab" data-toggle="tab">
+                      <i class="fa fa-circle-o"></i>
                       <span class="texto">Personas</span>
                     </a>
                   </li>
@@ -128,112 +140,175 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="row botonera">
-                      <div class="col-lg-12">
-                        <button class="btn btn-default nuevo">
-                          <i class="fa fa-file-text-o"></i>
-                          <span class="texto">Nuevo</span>
-                        </button>
-                        <button class="btn btn-default listar">
-                          <i class="fa fa-list-ul"></i>
-                          <span class="texto">Listar</span>
-                        </button>
-                        <button class="btn btn-default editar">
-                          <i class="fa fa-pencil-square-o"></i>
-                          <span class="texto">Editar</span>
-                        </button>
-                        <button class="btn btn-default eliminar">
-                          <i class="fa fa-trash-o"></i>
-                          <span class="texto">Eliminar</span>
-                        </button>
-                        <!-- Selector -->
-                        <form class="form-inline pull-right" role="form">
-                          <select class="form-control" name="" id="">
-                            <option value="1">Elemento 1</option>
-                            <option value="2">Elemento 2</option>
-                            <option value="3">Elemento 3</option>
-                          </select>
-                        </form>
+                    <div class="marco-data">
+                      <div class="row botonera">
+                        <div class="col-lg-12">
+                          <button class="btn btn-default nuevo">
+                            <i class="fa fa-file-text-o"></i>
+                            <span class="texto">Nuevo</span>
+                          </button>
+                          <button class="btn btn-default listar">
+                            <i class="fa fa-list-ul"></i>
+                            <span class="texto">Listar</span>
+                          </button>
+                          <button class="btn btn-default editar">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <span class="texto">Editar</span>
+                          </button>
+                          <button class="btn btn-default eliminar">
+                            <i class="fa fa-trash-o"></i>
+                            <span class="texto">Eliminar</span>
+                          </button>
+                          <!-- Selector -->
+                          <form class="form-inline pull-right" role="form">
+                            <select class="form-control" name="" id="">
+                              <option value="1">Elemento 1</option>
+                              <option value="2">Elemento 2</option>
+                              <option value="3">Elemento 3</option>
+                            </select>
+                          </form>
+                        </div>
                       </div>
-                    </div>
-                    <div class="row data">
-                      <div class="col-lg-12">
-                        <div class="row tabla">
-                          <div class="col-lg-12">
-                            <div class="cnt-tabla">
-                              <h1>Título de la tabla</h1>
-                              <table class="table">
-                                <tr>
-                                  <td></td>
-                                  <td><input class="form-control" type="text" name="" id="" placeholder="Código"></td>
-                                  <td><input class="form-control" type="text" name="" id="" placeholder="Rol"></td>
-                                  <td><input class="form-control" type="text" name="" id="" placeholder="Descripción"></td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <th></th>
-                                  <th>Código</th>
-                                  <th>Rol</th>
-                                  <th>Descripción</th>
-                                  <th>Estado</th>
-                                </tr>
-                                <tr>
-                                  <td><input type="radio" name="" id=""></td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                </tr>
-                                <tr>
-                                  <td><input type="radio" name="" id=""></td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                </tr>
-                                <tr>
-                                  <td><input type="radio" name="" id=""></td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                </tr>
-                                <tr>
-                                  <td><input type="radio" name="" id=""></td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                </tr>
-                                <tr>
-                                  <td><input type="radio" name="" id=""></td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                </tr>
-                                <tr>
-                                  <td><input type="radio" name="" id=""></td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                  <td>Texto</td>
-                                </tr>
-                              </table>
+                      <div class="row data">
+                        <div class="col-lg-12">
+                          <div class="row tabla">
+                            <div class="col-lg-12">
+                              <div class="cnt-tabla">
+                                <table class="table table-striped">
+                                  <tr>
+                                    <td></td>
+                                    <td><input class="form-control" type="text" name="" id="" placeholder="Código"></td>
+                                    <td><input class="form-control" type="text" name="" id="" placeholder="Rol"></td>
+                                    <td><input class="form-control" type="text" name="" id="" placeholder="Descripción"></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <th></th>
+                                    <th>Código</th>
+                                    <th>Rol</th>
+                                    <th>Descripción</th>
+                                    <th>Estado</th>
+                                  </tr>
+                                  <tr class="seleccionable">
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <label class="my-radio">
+                                        <input type="radio" name="radio" id="">
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-check-circle"></i>
+                                      </label>
+                                    </td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                    <td>Texto</td>
+                                  </tr>
+                                </table>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row paginador">
-                          <div class="col-lg-12 text-center">
-                            <ul class="pagination">
-                              <li><a href="#">&laquo;</a></li>
-                              <li class="active"><a href="#">1</a></li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">5</a></li>
-                              <li><a href="#">&raquo;</a></li>
-                            </ul>
+                          <div class="row paginador">
+                            <div class="col-lg-12 text-center">
+                              <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
